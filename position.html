@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Position</title>
+	  <style>
+.box{
+	margin:auto;
+	padding:20px 20px;
+	}
+	
+h3 ,h4{
+	font-size:37px;
+	color:green;
+	}
+	
+p,ul{
+	font-size:30px;
+	}
+
+.one{
+	position:static;
+	}
+.p2{
+	position:relative;
+	width:500px;
+	height:500px;
+	border:solid 2px red;
+	}
+	
+.two{
+	position:absolute;
+	bottom:63px;
+	right:40px;
+	}
+	
+.three{
+	position:fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	}
+	
+.four{
+	position:sticky;
+	top:0;
+	padding: 5px;
+	}
+	
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+img{
+width:250px;
+height:250px;
+}
+		  
+	</style>
+</head>
+<body>
+    <div class="box">
+	     <h3 style="text-align:center">Position</h3>
+	    <p>The position property specifies the type of positioning method used for an element</p>
+		<ul>There are <b>5 types</b> of position Property
+		<li>Static</li>
+		<li>relative</li>
+		<li>Absolute </li>
+		<li>Fixed</li>
+		<li>Sticky</li>
+		</ul>
+	<h3>Static</h3>
+	      <p> Default value Elements render in order, as they appear in the document flow</p>
+		 <div class="p1">
+		     <p>Hai My position is static</p>
+			 <p class="one">hai iam static</p>
+		 </div>
+	<h3>Absolute & relative</h3>
+	      <p>The element is positioned relative to its first positioned (not static)
+		     <p style="color:green">Hai the Box is Relative and the image is absolute</p>
+			 <img src="54384b5fd4634be174c409ecf47a38be.jpeg" class="two" alt="error">Haiam absoolte</p>
+		</div>
+	<h3>Fixed</h3>
+	     <p>The element is positioned relative to the browser window</p>
+		 <p class="three">Hai am fixed</p>
+		 
+	     <div class="sticky"> hello</div>
+
+	<h3>Sticky</h3>
+	     <p>The element is positioned based on the user's scroll position</p>
+		 <p>A sticky element toggles between relative and fixed, depending on the scroll position</p>
+		 <p>It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place </p>
+		 <div class="four">
+	         <p>Have a nice day</p>
+        </div>	
+		<div style="padding-bottom:2000px">
+		 <p>It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place </p>
+		</div>
+	
+	</div>
+</body>
+</html>
